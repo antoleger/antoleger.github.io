@@ -95,7 +95,7 @@ body {
 
 .hero {
     height: 350px;
-    background-image: url(img/matematika.png);
+    background-image: url(matematika.png);
     background-size: cover;
     background-position: 0 -90px;
     border-bottom: 5px solid lightskyblue;
@@ -152,3 +152,4 @@ body {
     text-align: center;
     font-size: 12px;
 }
+
