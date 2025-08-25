@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BODY */
+
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 960px;
+    margin: auto;
+    background-color: white;
+}
+
+/* HEADER */
+
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 5px;
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+
+}
+
+/* HERO */
+
+.hero {
+    height: 350px;
+    background-image: url(img/matematika.png);
+    background-size: cover;
+    background-position: 0 -90px;
+    border-bottom: 5px solid lightskyblue;
+    border-top: 5px solid salmon;
+}
+
+.hero1 {
+    height: 200px;
+    background-color: lightskyblue ;
+    text-align: center;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* CONTENT */
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.content h3 {
+    color: rgb(32, 127, 158);
+    font-size: 20px;
+    font-weight: 500px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.content h4 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: rgb(32, 127, 158);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
