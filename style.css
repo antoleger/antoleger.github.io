@@ -99,7 +99,7 @@ body {
     background-size: cover;
     background-position: 0 -90px;
     border-bottom: 5px solid lightskyblue;
-    border-top: 5px solid salmon;
+    border-top: 5px solid lightskyblue;
 }
 
 .hero1 {
@@ -152,4 +152,5 @@ body {
     text-align: center;
     font-size: 12px;
 }
+
 
