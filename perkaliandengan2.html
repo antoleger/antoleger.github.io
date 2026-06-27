@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Penjumlahan dengan Dua</title>
+
+	<style>
+		body {
+			font-family: arial, sans-serif;
+			text-align: center;
+		}
+
+		#jumlah {
+			font-size: 150px;
+		}
+
+		#kotak {
+			top: 0px;
+			width: 100%;
+			height: 800px;
+			position: absolute;
+			opacity: 0%;
+			cursor: pointer;
+		}
+	</style>
+
+	<script>
+		// Fungsi untuk menampilkan soal baru
+		function tampilSoal() {
+			let p = 2;
+			let q = Math.floor(Math.random() * 11); // angka random 0–10
+			document.getElementById("jumlah").innerHTML = `<h1>${p} + ${q}</h1>`;
+		}
+
+		// Event: tekan Enter → refresh soal
+		document.addEventListener('keydown', function(event) {
+			if (event.key === "Enter") {
+				tampilSoal();
+			}
+		});
+
+		// Jalankan pertama kali saat halaman dibuka
+		window.onload = tampilSoal;
+	</script>
+</head>
+
+<body>
+	<div id="jumlah"></div>
+
+	<!-- Area klik untuk refresh soal -->
+	<div id="kotak" onclick="tampilSoal()"></div>
+</body>
+</html>
+
