@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Penjumlahan dengan Tujuh</title>
+	<title>Penjumlahan dengan Nol</title>
 
 	<style>
 		body {
@@ -28,7 +28,7 @@
 	<script>
 		// Fungsi untuk menampilkan soal baru
 		function tampilSoal() {
-			let p = 7;
+			let p = 0;
 			let q = Math.floor(Math.random() * 11); // angka random 0–10
 			document.getElementById("jumlah").innerHTML = `<h1>${p} x ${q}</h1>`;
 		}
@@ -52,4 +52,3 @@
 	<div id="kotak" onclick="tampilSoal()"></div>
 </body>
 </html>
-
