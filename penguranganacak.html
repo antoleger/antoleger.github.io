@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pengurangan Acak</title>
 
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+
+		#jumlah {
+			font-size: 150px;
+		}
+
+		#kotak {
+			top: 0px;
+			width: 100%;
+			height: 800px;
+			position: absolute;
+			opacity: 0%;
+			cursor: pointer;
+		}
+	</style>
+
+	<script>
+		// Fungsi untuk menampilkan soal baru
+		function tampilSoal() {
+			let a, b;
+
+			// Menghasilkan a > b
+			do {
+				a = Math.floor(Math.random() * 11); // 0–10
+				b = Math.floor(Math.random() * 11); // 0–10
+			} while (a <= b);
+
+			document.getElementById("jumlah").innerHTML = `<h1>${a} - ${b}</h1>`;
+		}
+
+		// Tekan Enter → soal baru
+		document.addEventListener("keydown", function(event) {
+			if (event.key === "Enter") {
+				tampilSoal();
+			}
+		});
+
+		// Soal pertama saat halaman dibuka
+		window.onload = tampilSoal;
+	</script>
+</head>
+
+<body>
+	<div id="jumlah"></div>
+
+	<!-- Area klik untuk soal baru -->
+	<div id="kotak" onclick="tampilSoal()"></div>
+</body>
+</html>
